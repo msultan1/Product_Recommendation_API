@@ -1,4 +1,4 @@
-/.idea/
-/venv/
-/Data/
-*/__pycache__/
+*/.idea/
+*/venv/
+Development/Data/
+Development/*/__pycache__/
