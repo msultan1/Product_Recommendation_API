@@ -1,0 +1,36 @@
+Creating Docker Image Tutorial : 
+ 
+ 1- make sure BuildKit is set to true : DOCKER_BUILDKIT=1 docker build .
+ 
+ 2- set up your enviroment , Create and Run your app , in our case : RESTAPI.py
+ 
+ 3- Create the Docker File inside API folder Named (API_Docker_Config)
+ 
+ 4- inside the Docker File write this following exact lines :
+# syntax=docker/dockerfile:1
+FROM python:3.8-slim-buster
+WORKDIR /Dev
+RUN pip3 install flask
+RUN pip3 install flask-restful
+RUN pip3 install pandas
+RUN pip3 install numpy
+RUN pip3 install xgboost
+RUN pip3 install sklearn
+RUN pip3 install pickle
+COPY ../API/ API/
+COPY ../Model/ Model/
+CMD [ "python", "RESTAPI.py", "--host=0.0.0.0"]
+ 
+ 5- now to Build the Image wirte  : docker build --tag API_Docker_Image
+ 
+ 6- image will be created with the structure of :
+ Dev:
+	API:
+		RESTAPI.py
+	Model:
+		ModelHandler.py
+		ModelTraining.py
+		ModelLoader.py
+		trained_Model.sav
+
+  7- to run the image as container use this command : docker run API_Docker_Image

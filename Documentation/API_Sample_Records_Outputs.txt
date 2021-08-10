@@ -1,0 +1,56 @@
+First Record :
+{
+    "Input_data": [
+        {
+            "age": "33",
+            "seniority": "48",
+            "segment": "01 - TOP",
+            "gender": "V",
+            "relationship_type": "A",
+            "annaul_income": "326124.90",
+            "activity_level": "1",
+            "region": "ES"
+        }
+    ],
+    "Products_Prediction": [
+        "ind_cco_fin_ult1 ind_dela_fin_ult1 ind_recibo_ult1 ind_nomina_ult1 ind_tjcr_fin_ult1 ind_cno_fin_ult1 ind_nom_pens_ult1"
+    ]
+}
+
+Second Record :
+{
+    "Input_data": [
+        {
+            "age": "56",
+            "seniority": "248",
+            "segment": "01 - TOP",
+            "gender": "V",
+            "relationship_type": "A",
+            "annaul_income": "527793.31",
+            "activity_level": "1",
+            "region": "ES"
+        }
+    ],
+    "Products_Prediction": [
+        "ind_cco_fin_ult1 ind_tjcr_fin_ult1 ind_recibo_ult1 ind_dela_fin_ult1 ind_nomina_ult1 ind_nom_pens_ult1 ind_ecue_fin_ult1"
+    ]
+}
+
+Third Record :
+{
+    "Input_data": [
+        {
+            "age": "40",
+            "seniority": "100",
+            "segment": "03 - UNIVERSITARIO",
+            "gender": "V",
+            "relationship_type": "I",
+            "annaul_income": "421543.12",
+            "activity_level": "0",
+            "region": "ES"
+        }
+    ],
+    "Products_Prediction": [
+        "ind_cco_fin_ult1 ind_recibo_ult1 ind_tjcr_fin_ult1 ind_nomina_ult1 ind_nom_pens_ult1 ind_cno_fin_ult1 ind_reca_fin_ult1"
+    ]
+}
